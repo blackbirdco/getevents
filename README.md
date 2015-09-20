@@ -1,4 +1,4 @@
-# Getevents [![Build Status](https://travis-ci.org/blackbirdco/getevents.svg)](https://travis-ci.org/blackbirdco/getevents)
+# Getevents [![Build Status](https://travis-ci.org/blackbirdco/getevents.svg)](https://travis-ci.org/blackbirdco/getevents) [![Code Climate](https://codeclimate.com/repos/55ff1b0169568014780011e9/badges/032c08b2b3822bf8515d/gpa.svg)](https://codeclimate.com/repos/55ff1b0169568014780011e9/feed) [![Test Coverage](https://codeclimate.com/repos/55ff1b0169568014780011e9/badges/032c08b2b3822bf8515d/coverage.svg)](https://codeclimate.com/repos/55ff1b0169568014780011e9/coverage)
 
 API wrapper for [getevents.co](https://getevents.co/).
 

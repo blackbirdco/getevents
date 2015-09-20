@@ -1,3 +1,6 @@
 language: ruby
 rvm:
   - 2.1.2
+addons:
+  code_climate:
+    55ff1b0169568014780011e9
