@@ -3,8 +3,10 @@ require "json"
 require "hashie/mash"
 
 require "getevents/version"
+require "getevents/utils"
 require "getevents/client"
 require "getevents/location"
+require "getevents/event"
 
 module Getevents
   class << self

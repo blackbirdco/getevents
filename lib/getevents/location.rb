@@ -1,16 +1,12 @@
-require 'json'
-
 class Getevents::Location
+  include Getevents::Utils
+
   def self.search(city)
     new.search(city)
   end
 
   def search(city)
-    request = raw_search(city)
-
-    JSON.parse(request.body)["cities"].map do |city_hash|
-      Hashie::Mash.new(city_hash)
-    end
+    format_response_collection(raw_search(city), "cities")
   end
 
   private
@@ -20,9 +16,5 @@ class Getevents::Location
       req.url '/location'
       req.params['city'] = city
     end
-  end
-
-  def connection
-    @connection ||= Getevents::Client.new.connection
   end
 end
