@@ -45,11 +45,19 @@ end
 
 ### Location
 
-FEEDME
+```ruby
+locations = Getevents::Location.search('Paris')
+location = locations.first
+
+puts location.country
+=> "France"
+puts location.lng
+=> -1.55336
+```
 
 ### Event
 
-FEEDME
+TODO (not yet implemented)
 
 ### Eventlisting
 
@@ -66,6 +74,12 @@ TODO (not yet implemented)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+### Run tests
+
+```sh
+$ GETEVENTS_ACCOUNT_ID=YOUR_ACCOUNT_ID GETEVENTS_TOKEN=YOUR_TOKEN rspec spec/
+```
 
 ## Links
 

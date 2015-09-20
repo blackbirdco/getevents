@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.getevents.co/location?city=Nantes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - GetEvents <GETEVENTS_ACCOUNT_ID>:<GETEVENTS_TOKEN>
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - public, max-age=43200
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, Api-Version,
+        Response-Time
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Expose-Headers:
+      - Api-Version, Request-Id, Response-Time
+      Connection:
+      - close
+      Content-Md5:
+      - n6wCQkIZFaZpW2mioHeutQ==
+      Date:
+      - Sun, 20 Sep 2015 20:30:18 GMT
+      Server:
+      - api.getevents.co
+      Api-Version:
+      - 1.0.0
+      Request-Id:
+      - 68506f10-5fd6-11e5-acf7-39fec42b25d7
+      Response-Time:
+      - '5'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjaXRpZXMiOlt7ImVsZXZhdGlvbiI6IiIsImFyZWEiOiJQYXlzIGRlIGxh
+        IExvaXJlIiwiY29udGluZW50IjoiRXVyb3BlIiwiY291bnRyeSI6IkZyYW5j
+        ZSIsImxuZyI6LTEuNTUzMzYsImNpdHkiOiJOYW50ZXMiLCJ0aW1lem9uZSI6
+        IkV1cm9wZS9QYXJpcyIsImFyZWFfY29kZSI6IkI1IiwiYWx0ZXJuYXRlIjoi
+        TlRFLE5hbnQsTmFudGUsTmFudGVzLE5hbnRvLE5hb25lZCxQb3J0dXMgTmFt
+        bmV0dXMsbmFuIHRlLG5hbnQsbmFudGEsbmFudG8s0J3QsNC90YIs16DXkNeg
+        15gs2YbYp9mG2Kos4KSo4KS+4KSC4KSkLOODiuODs+ODiCzljZfnibkiLCJj
+        b250aW5lbnRfY29kZSI6IkVVIiwiZGVtIjoxOSwicG9wdWxhdGlvbiI6Mjc3
+        MjY5LCJnZW8iOlstMS41NTMzNiw0Ny4yMTcyNV0sImNvdW50cnlfY29kZSI6
+        IkZSIiwibW9kaWZpZWQiOiIyMDExLTEyLTA4IiwiX2lkIjoyOTkwOTY5LCJy
+        ZWdpb24iOiJOYW50ZXMiLCJsYXQiOjQ3LjIxNzI1fV0sImxpbmtzIjp7InNl
+        bGYiOiJodHRwOi8vYXBpLmdldGV2ZW50cy5jby9sb2NhdGlvbj9jaXR5PU5h
+        bnRlcyJ9fQ==
+    http_version: 
+  recorded_at: Sun, 20 Sep 2015 20:29:40 GMT
+recorded_with: VCR 2.9.3
