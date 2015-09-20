@@ -1,4 +1,4 @@
-# Getevents
+# Getevents [![Build Status](https://travis-ci.org/blackbirdco/getevents.svg)](https://travis-ci.org/blackbirdco/getevents)
 
 API wrapper for [getevents.co](https://getevents.co/).
 
