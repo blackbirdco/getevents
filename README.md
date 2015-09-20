@@ -35,7 +35,7 @@ Getevents.configure do |config|
 end
 ```
 
-For testing purpose inside your application:
+For testing purpose inside your application (NOT YET IMPLEMENTED):
 
 ```ruby
 Getevents.configure do |config|
@@ -69,7 +69,7 @@ TODO (not yet implemented)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/getevents/fork )
+1. Fork it ( https://github.com/blackbirdco/getevents/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
