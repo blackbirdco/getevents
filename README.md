@@ -57,7 +57,15 @@ puts location.lng
 
 ### Event
 
-TODO (not yet implemented)
+```ruby
+events = Getevents::Event.search(47.21, -1.55, { start_date: "20150921" })
+event = events.first
+
+puts event.name
+=> "La fête de la grenouille"
+puts event.start_date
+=> "2015-09-21T00:00:00.000Z"
+```
 
 ### Eventlisting
 
