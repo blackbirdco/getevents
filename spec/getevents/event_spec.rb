@@ -43,5 +43,23 @@ describe Getevents::Event do
         })
       end
     end
+
+    describe "in test mode" do
+      before do
+        Getevents.configuration.test_mode = true
+      end
+
+      it { should == [] }
+
+      it "doesn't perform an http call" do
+        subject
+
+        expect(WebMock).not_to have_requested(:get, Getevents::Client::URL+"/event")
+      end
+
+      after do
+        Getevents.configuration.test_mode = false
+      end
+    end
   end
 end

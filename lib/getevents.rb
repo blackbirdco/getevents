@@ -5,6 +5,7 @@ require "hashie/mash"
 require "getevents/version"
 require "getevents/utils"
 require "getevents/client"
+require "getevents/fake_client"
 require "getevents/location"
 require "getevents/event"
 
@@ -19,10 +20,10 @@ module Getevents
   end
 
   class Configuration
-    attr_accessor :testing_mode, :account_id, :token
+    attr_accessor :test_mode, :account_id, :token
 
     def initialize
-      @testing_mode = false
+      @test_mode = false
       @account_id = nil
       @token = nil
     end

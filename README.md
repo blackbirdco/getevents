@@ -35,13 +35,15 @@ Getevents.configure do |config|
 end
 ```
 
-For testing purpose inside your application (NOT YET IMPLEMENTED):
+For testing purpose inside your application:
 
 ```ruby
 Getevents.configure do |config|
-  config.testing_mode = true
+  config.test_mode = true
 end
 ```
+
+It will render empty arrays for each methods.
 
 ### Location
 
