@@ -49,8 +49,6 @@ describe Getevents::Event do
         Getevents.configuration.test_mode = true
       end
 
-      it { should == [] }
-
       it "doesn't perform an http call" do
         subject
 

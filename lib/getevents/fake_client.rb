@@ -552,8 +552,7 @@ class Getevents::FakeClient
       "adverts": [],
       "links": {
         "self": "http://api.getevents.co/event?lat=45.5017&lng=-73.58781&limit=3"
-      }
-    },
-    "cities": []')
+      },
+    "cities": []}')
   end
 end
